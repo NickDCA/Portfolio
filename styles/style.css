@@ -28,7 +28,7 @@ header {
   flex-direction: column;
   align-items: baseline;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: left;
   padding: 1.5em;
 }
@@ -105,5 +105,131 @@ header .tech-stack i:nth-child(7) {
   animation-delay: 1.2s;
 }
 header p {
-  text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 1.5em;
+  }
+  header h2 {
+    font-size: 2em;
+  }
+  header .title {
+    align-items: center;
+    justify-content: start;
+    padding-left: 25%;
+  }
+  header .title h1 {
+    font-size: 5.5em;
+  }
+  header .title .title__links {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5em;
+    flex-basis: 20%;
+    margin-left: 0.75em;
+    cursor: pointer;
+  }
+  header p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+.projects h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  color: rgb(61, 79, 148);
+}
+.projects .project {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+}
+.projects .project__title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #30343f;
+  text-decoration: none;
+}
+.projects .project__title:hover {
+  color: rgb(61, 79, 148);
+  box-shadow: 2 2;
+  transition: 0.3s;
+}
+.projects .project img {
+  max-width: 90%;
+  cursor: pointer;
+}
+.projects .project img:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+  box-shadow: #1e2749 5px 5px;
+}
+.projects .project__description {
+  font-size: 1em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .projects {
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .projects h1 {
+    flex-basis: 100%;
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(61, 79, 148);
+  }
+  .projects .project {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    flex-basis: 40%;
+  }
+  .projects .project__title {
+    font-size: 1.5em;
+  }
+  .projects .project img {
+    max-width: 90%;
+    cursor: pointer;
+  }
+  .projects .project img:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+    box-shadow: #1e2749 8px 8px;
+  }
+  .projects .project__description {
+    font-size: 1em;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
