@@ -1,0 +1,102 @@
+@import '../abstracts/colors';
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 20%;
+  text-align: left;
+  padding: 1.5em;
+
+  h2 {
+    font-size: 1.5em;
+    span {
+      color: $delft-blue;
+      font-weight: 700;
+    }
+  }
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1em;
+
+      &:nth-child(2) {
+        flex-basis: 100%;
+      }
+    }
+
+    .title__links {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 0.5em;
+      flex-basis: 40%;
+      margin-left: 0.75em;
+      cursor: pointer;
+    }
+  }
+
+  .tech-stack {
+    display: flex;
+    align-items: start;
+    gap: 0.5em;
+    margin: 0.75em 0;
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateX(
+          -100px
+        ); /* Start with the icon hidden and offset to the left */
+      }
+      to {
+        opacity: 1;
+        transform: translateX(
+          0
+        ); /* End with the icon visible and at its original position */
+      }
+    }
+
+    i {
+      opacity: 0;
+      animation-name: fade-in;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    i:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    i:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    i:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    i:nth-child(4) {
+      animation-delay: 0.6s;
+    }
+
+    i:nth-child(5) {
+      animation-delay: 0.8s;
+    }
+
+    i:nth-child(6) {
+      animation-delay: 1s;
+    }
+    i:nth-child(7) {
+      animation-delay: 1.2s;
+    }
+  }
+  p {
+    text-align: justify;
+  }
+}
